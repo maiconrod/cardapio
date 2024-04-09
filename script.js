@@ -91,7 +91,20 @@ function updateCardModal() {
         currency: "BRL"
     })
     //Total de itens no carrinho
-    cartCounter.innerHTML = cart.length;
+    const itemCounts = {}
+    cart.forEach(item => {
+        if(itemCounts[item.id]) {
+            itemCounts[item.id] += item.quantity
+        } else {
+            itemCounts[item.id] = item.quantity
+        }
+    })
+    let totalItems = 0
+    for(const itemId in itemCounts) {
+        totalItems += itemCounts[itemId]
+    }
+
+    cartCounter.innerHTML = totalItems;
 }
 
 //Função para remover o item do carrinho

@@ -675,6 +675,14 @@ video {
   top: 0px;
 }
 
+.top-2 {
+  top: 0.5rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -899,6 +907,26 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.max-h-60 {
+  max-height: 15rem;
+}
+
+.max-h-48 {
+  max-height: 12rem;
+}
+
+.max-h-\[\] {
+  max-height: ;
+}
+
+.max-h-\[600\] {
+  max-height: 600;
+}
+
+.max-h-\[600px\] {
+  max-height: 600px;
 }
 
 .w-28 {
